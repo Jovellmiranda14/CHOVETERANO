@@ -1,163 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>VETERANO BARBERSHOP</title>
-    <link href="asset/LOGO.png" rel="icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="asset/LOGO.png" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-image: url('asset/gbg.png');
-        }
+      body {
+        font-family: "Arial", sans-serif;
+        background-image: url("asset/gbg.png");
+      }
 
-        .about-img img {
-            max-width: 100%;
-            border-radius: 50%;
-        }
+      .about-img img {
+        max-width: 100%;
+        border-radius: 50%;
+      }
 
-        .about-info p {
-            margin: 10px 0;
-        }
+      .about-info p {
+        margin: 10px 0;
+      }
 
-        .owner-container {
-            background: linear-gradient(0deg, rgba(255,252,0,0) 0%, rgba(255,255,255,0.6615896358543417) 100%);
-            color: #000000;
-            text-align: center;
-            padding: 100px 15px;
-            border-radius: 30px;
-            font-family: 'Bebas Neue', sans-serif;
-            margin-bottom: 50px;
-        }
+      .owner-container {
+        background: linear-gradient(
+          0deg,
+          rgba(255, 252, 0, 0) 0%,
+          rgba(255, 255, 255, 0.6615896358543417) 100%
+        );
+        color: #000000;
+        text-align: center;
+        padding: 100px 15px;
+        border-radius: 30px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-bottom: 50px;
+      }
 
-        .owner-container .row {
-            display: flex;
-            align-items: center;
-        }
+      .owner-container .row {
+        display: flex;
+        align-items: center;
+      }
 
-        .owner-info {
-            text-align: left;
-            margin-top: 20px;
-            margin-left: 10px;
-        }
+      .owner-info {
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
 
-        .owner-info img {
-            max-width: 100%;
-            border-radius: 50px;
-            margin-top: 10px;
-        }
+      .owner-info img {
+        max-width: 100%;
+        border-radius: 50px;
+        margin-top: 10px;
+      }
 
-        .about-img {
-            border-radius: 50px;  
-        }
+      .about-img {
+        border-radius: 50px;
+      }
 
-        .navbar {
-            background-color: #00000020;
-        }
+      .navbar {
+        background-color: #00000020;
+      }
 
-        .navbar-nav {
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-        }
+      .navbar-nav {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
 
-        .navbar-dark .navbar-nav .nav-link {
-            color: #CFB53B;
-            font-weight: bold;
-            margin: 0 15px;
-        }
+      .navbar-dark .navbar-nav .nav-link {
+        color: #cfb53b;
+        font-weight: bold;
+        margin: 0 15px;
+      }
 
-        h1{
-            color:#000000;
-            font-size: 7.5em;
-            bottom: 0%;
-        }
+      h1 {
+        color: #000000;
+        font-size: 7.5em;
+        bottom: 0%;
+      }
 
-        footer {
-   position: flex;
-   bottom: 0;
-   background-color: #CFB53B;
-   height: 80px;
-   width: 100%;
-   z-index: 1;
-}
+      footer {
+        position: flex;
+        bottom: 0;
+        background-color: #cfb53b;
+        height: 80px;
+        width: 100%;
+        z-index: 1;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="#"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- About Us Section -->
     <section id="about" class="about-mf sect-pt4 route">
-        <div class="container mt-5 owner-container">
-            <div class="row">
-                <!-- Image Section -->
-                <div class="col-md-6">
-                    <div class="about-img">
-                        <img style=" border-radius: 40px !important; height:60vh;" src="asset/OWER.png" class="img-fluid rounded b-shadow-a" alt="Profile Image">
-                    </div>
-                </div>
-                <!-- About Me Section -->
-                <div class="col-md-6">
-                    <div class="owner-info">
-                        <h1>About Us</h1>
-                        
-                        <!-- Add more owner details as needed -->
-                        <p style="color:#CFB53B; font-size: 1.2em;">When we started during the pandemic. We, cousins, decided to have a new haircut skill while 
-                        in quarantine. With daily practice, we became better and more precise with our haircuts.Every month, 
-                        we get stronger and stronger to build our own barbershop. After my cousins and I become extremely skilled hair stylists, 
-                        my relatives bravely opened a barbershop where they continued cut hair.</p> 
-
-                        <p style="color:#CFB53B; font-size: 1.2em;">We become part of our community, and we enjoy making our customers happy. Behind every haircut, 
-                        you can see the hard work, determination, and unity that brought our little barbershop to life in the midst of the trials
-                         brought by the pandemic. Our story is an example of how collaboration in the midst of crisis can be inspiring. Thanks to our collaboration,
-                          determination, and hard work, our barbershop now has two branches.</p> 
-                    </div>
-                </div>
+      <div class="container mt-5 owner-container">
+        <div class="row">
+          <!-- Image Section -->
+          <div class="col-md-6">
+            <div class="about-img">
+              <img
+                style="border-radius: 40px !important; height: 60vh"
+                src="asset/OWER.png"
+                class="img-fluid rounded b-shadow-a"
+                alt="Profile Image"
+              />
             </div>
+          </div>
+          <!-- About Me Section -->
+          <div class="col-md-6">
+            <div class="owner-info">
+              <h1>About Us</h1>
+
+              <!-- Add more owner details as needed -->
+              <p style="color: #cfb53b; font-size: 1.2em">
+                When we started during the pandemic. We, cousins, decided to
+                have a new haircut skill while in quarantine. With daily
+                practice, we became better and more precise with our
+                haircuts.Every month, we get stronger and stronger to build our
+                own barbershop. After my cousins and I become extremely skilled
+                hair stylists, my relatives bravely opened a barbershop where
+                they continued cut hair.
+              </p>
+
+              <p style="color: #cfb53b; font-size: 1.2em">
+                We become part of our community, and we enjoy making our
+                customers happy. Behind every haircut, you can see the hard
+                work, determination, and unity that brought our little
+                barbershop to life in the midst of the trials brought by the
+                pandemic. Our story is an example of how collaboration in the
+                midst of crisis can be inspiring. Thanks to our collaboration,
+                determination, and hard work, our barbershop now has two
+                branches.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="flex d-flex align-items-center">
-        <div class="container-fluid text-center">
-            <p class="m-0"><strong>&copy; Copyright A.J.E. </strong></p>
-        </div>
+      <div class="container-fluid text-center">
+        <p class="m-0"><strong>&copy; Copyright A.J.E. </strong></p>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-
+  </body>
 </html>

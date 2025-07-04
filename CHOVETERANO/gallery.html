@@ -1,193 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>VETERANO BARBERSHOP</title>
-    <link href="asset/LOGO.png" rel="icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="asset/LOGO.png" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-image: url('asset/gbg.png');
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        font-family: "Arial", sans-serif;
+        background-image: url("asset/gbg.png");
+        margin: 0;
+        padding: 0;
+      }
 
-        .navbar {
-            background-color: #00000020;
-        }
+      .navbar {
+        background-color: #00000020;
+      }
 
-        .navbar-nav {
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-        }
+      .navbar-nav {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
 
-        .navbar-dark .navbar-nav .nav-link {
-            color: #CFB53B;
-            font-weight: bold;
-            margin: 0 15px; /* Adjust margin as needed */
-        }
+      .navbar-dark .navbar-nav .nav-link {
+        color: #cfb53b;
+        font-weight: bold;
+        margin: 0 15px; /* Adjust margin as needed */
+      }
 
-        .jumbotron {
-            background-color: #ffffff00;
-            color: #CFB53B;
-            text-align: center;
-            padding: 100px 15px;
-            font-family: 'Bebas Neue', sans-serif;
-        }
+      .jumbotron {
+        background-color: #ffffff00;
+        color: #cfb53b;
+        text-align: center;
+        padding: 100px 15px;
+        font-family: "Bebas Neue", sans-serif;
+      }
 
-        #rolunk {
-            background-color: #00000040; /* Change background color as needed */
-            padding: 50px 0; /* Adjust padding as needed */
-        }
+      #rolunk {
+        background-color: #00000040; /* Change background color as needed */
+        padding: 50px 0; /* Adjust padding as needed */
+      }
 
-        #rolunk h1 {
-            font-size: 2.5rem;
-            color: #CFB53B;
-            margin-bottom: 20px;
-        }
+      #rolunk h1 {
+        font-size: 2.5rem;
+        color: #cfb53b;
+        margin-bottom: 20px;
+      }
 
-        .lightbox-gallery {
-            background: linear-gradient(180deg, rgba(0,26,217,0) 0%, rgba(205,0,0,0) 100%);
-            background-repeat: no-repeat;
-            color: #000;
-            overflow-x: hidden;
-        }
+      .lightbox-gallery {
+        background: linear-gradient(
+          180deg,
+          rgba(0, 26, 217, 0) 0%,
+          rgba(205, 0, 0, 0) 100%
+        );
+        background-repeat: no-repeat;
+        color: #000;
+        overflow-x: hidden;
+      }
 
-        .lightbox-gallery p {
-            color: #fff;
-        }
+      .lightbox-gallery p {
+        color: #fff;
+      }
 
+      .lightbox-gallery h2 {
+        font-weight: bold;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        color: #fff;
+      }
+
+      @media (max-width: 767px) {
         .lightbox-gallery h2 {
-            font-weight: bold;
-            margin-bottom: 40px;
-            padding-top: 40px;
-            color: #fff;
+          margin-bottom: 25px;
+          padding-top: 25px;
+          font-size: 24px;
         }
+      }
 
-        @media (max-width: 767px) {
-            .lightbox-gallery h2 {
-                margin-bottom: 25px;
-                padding-top: 25px;
-                font-size: 24px;
-            }
-        }
+      .lightbox-gallery .intro {
+        font-size: 16px;
+        max-width: 500px;
+        margin: 0 auto 40px;
+      }
 
-        .lightbox-gallery .intro {
-            font-size: 16px;
-            max-width: 500px;
-            margin: 0 auto 40px;
-        }
+      .lightbox-gallery .intro p {
+        margin-bottom: 0;
+      }
 
-        .lightbox-gallery .intro p {
-            margin-bottom: 0;
-        }
+      .lightbox-gallery .photos {
+        padding-bottom: 20px;
+      }
 
-        .lightbox-gallery .photos {
-            padding-bottom: 20px;
-        }
+      .lightbox-gallery .item {
+        padding-bottom: 30px;
+      }
 
-        .lightbox-gallery .item {
-            padding-bottom: 30px;
-        }
-
-        footer {
-   position: flex;
-   bottom: 0;
-   background-color: #CFB53B;
-   height: 80px;
-   width: 100%;
-   z-index: 1;
-}
+      footer {
+        position: flex;
+        bottom: 0;
+        background-color: #cfb53b;
+        height: 80px;
+        width: 100%;
+        z-index: 1;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="#"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-<div id="home" class="jumbotron">
-    <h1 style=" font-size: 6.5em;">GALLERY</h1>
-    <p style="font-size: 3.2em;">Hair cuts, Hair colors, and Products</p>
-</div>
+    <div id="home" class="jumbotron">
+      <h1 style="font-size: 6.5em">GALLERY</h1>
+      <p style="font-size: 3.2em">Hair cuts, Hair colors, and Products</p>
+    </div>
 
-<div id="rolunk" class="et_pb_section et_pb_section_1 et_section_regular">
-    <div class="et_pb_row et_pb_row_3 et_pb_row_fullwidth et_pb_equal_columns et_pb_gutte rs1">
-        <div class="et_pb_column et_pb_column_1_2 et_pb_column_4 et_pb_css_mix_blend_mode_ passthrough">
-            <div class="et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_left et_pb_bg_ layout_light">
-                <div class="et_pb_text_inner">
-                
-                    <div class="lightbox-gallery">
-                        <div class="container">
-                            <div class="row photos">
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/6.png" data-lightbox="photos"><img class="img-fluid" src="asset/6.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/7.png" data-lightbox="photos"><img class="img-fluid" src="asset/7.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/8.png" data-lightbox="photos"><img class="img-fluid" src="asset/8.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/9.png" data-lightbox="photos"><img class="img-fluid" src="asset/9.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/10.png" data-lightbox="photos"><img class="img-fluid" src="asset/10.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/11.png" data-lightbox="photos"><img class="img-fluid" src="asset/11.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/12.png" data-lightbox="photos"><img class="img-fluid" src="asset/12.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/13.png" data-lightbox="photos"><img class="img-fluid" src="asset/13.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/14.png" data-lightbox="photos"><img class="img-fluid" src="asset/14.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/15.png" data-lightbox="photos"><img class="img-fluid" src="asset/15.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/16.png" data-lightbox="photos"><img class="img-fluid" src="asset/16.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/17.png" data-lightbox="photos"><img class="img-fluid" src="asset/17.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/18.png" data-lightbox="photos"><img class="img-fluid" src="asset/18.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/19.png" data-lightbox="photos"><img class="img-fluid" src="asset/19.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/20.png" data-lightbox="photos"><img class="img-fluid" src="asset/20.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/1.png" data-lightbox="photos"><img class="img-fluid" src="asset/1.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/2.png" data-lightbox="photos"><img class="img-fluid" src="asset/2.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/3.png" data-lightbox="photos"><img class="img-fluid" src="asset/3.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/4.png" data-lightbox="photos"><img class="img-fluid" src="asset/4.png"></a></div>
-                                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="asset/5.png" data-lightbox="photos"><img class="img-fluid" src="asset/5.png"></a></div>
-
-                            </div>
-                        </div>
+    <div id="rolunk" class="et_pb_section et_pb_section_1 et_section_regular">
+      <div
+        class="et_pb_row et_pb_row_3 et_pb_row_fullwidth et_pb_equal_columns et_pb_gutte rs1"
+      >
+        <div
+          class="et_pb_column et_pb_column_1_2 et_pb_column_4 et_pb_css_mix_blend_mode_ passthrough"
+        >
+          <div
+            class="et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_left et_pb_bg_ layout_light"
+          >
+            <div class="et_pb_text_inner">
+              <div class="lightbox-gallery">
+                <div class="container">
+                  <div class="row photos">
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/6.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/6.png"
+                      /></a>
                     </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/7.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/7.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/8.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/8.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/9.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/9.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/10.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/10.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/11.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/11.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/12.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/12.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/13.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/13.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/14.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/14.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/15.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/15.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/16.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/16.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/17.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/17.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/18.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/18.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/19.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/19.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/20.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/20.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/1.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/1.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/2.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/2.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/3.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/3.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/4.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/4.png"
+                      /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item">
+                      <a href="asset/5.png" data-lightbox="photos"
+                        ><img class="img-fluid" src="asset/5.png"
+                      /></a>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="et_pb_column et_pb_column_1_2 et_pb_column_5 et_pb_css_mix_blend_mode_ passthrough et-last-child et_pb_column_empty"></div>
+        <div
+          class="et_pb_column et_pb_column_1_2 et_pb_column_5 et_pb_css_mix_blend_mode_ passthrough et-last-child et_pb_column_empty"
+        ></div>
+      </div>
     </div>
-</div>
 
-<footer class="flex d-flex align-items-center">
-    <div class="container-fluid text-center">
+    <footer class="flex d-flex align-items-center">
+      <div class="container-fluid text-center">
         <p class="m-0"><strong>&copy; Copyright A.J.E. </strong></p>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+  </body>
 </html>
